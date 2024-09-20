@@ -44,6 +44,7 @@ class BinarySensor(BinarySensorEntity):
         self._stack = int(stack)
         self._type = type
         self._chan = int(chan)
+        self._update_interval = float(update_interval)
         self._short_timeout = .05
         self._icons = DEFAULT_ICONS | SM_MAP[self._type].get("icon", {})
         self._icon = self._icons["off"]
